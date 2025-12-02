@@ -1,0 +1,29 @@
+<AnalysisServicesUserConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <UserIDs>
+          <ConfigurationSetting>
+            <Id>DW</Id>
+            <Name>DW</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA6SrtcddcU0WzH4/8ruhAywAAAAAGAAAARABXAAAAEGYAAAABAAAgAAAA2VmJL1I31zqRSfqQ9Vkb0TPVqdVVG9LhMNBhOZI8ESkAAAAADoAAAAACAAAgAAAAmNGHpnWG5CIXAKUSTuCo6oWNTE3E1uAHfaTEOc8YJwsgAAAA/m02I9d1pE+LXULQ5HMFFfHOWfgjbDbEKqIvT57w0YFAAAAAd4BrNlYEia2W8E1aFWnDLFMlMbBEZOt2W2IJuRTlaz0rh6actanbXlV4htDYzsfRC6iVyrcwJihqPHwo0EQmmw==</Value>
+          </ConfigurationSetting>
+        </UserIDs>
+        <UserPasswords>
+          <ConfigurationSetting>
+            <Id>DW</Id>
+            <Name>DW</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA6SrtcddcU0WzH4/8ruhAywAAAAAGAAAARABXAAAAEGYAAAABAAAgAAAABk8EBZIc3hWBaGvXPKXOFwHiKLZ84X96JGjuf2X+iDsAAAAADoAAAAACAAAgAAAA3V/0ebgPdaUlUaxvPL5cbZatNgH0bSCF+Co1PDAtvJkQAAAAc7dzFRy/nvLmmE8cYPvJQ0AAAACse0B91m1JVTa3Av8gk7tU0hpgYB6Y3gwqPJK1XHND2CH0GQIfjsSH6nTGqhDaymvCFV5PSEmgBMSGejsxLyA5</Value>
+          </ConfigurationSetting>
+        </UserPasswords>
+        <TargetServer>localhost</TargetServer>
+        <TargetDatabase>DW_Depositos</TargetDatabase>
+        <StartObject>
+          <ObjectId></ObjectId>
+          <ObjectType>Current</ObjectType>
+        </StartObject>
+      </Options>
+    </Configuration>
+  </Configurations>
+</AnalysisServicesUserConfiguration>

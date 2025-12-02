@@ -1,0 +1,71 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="11/28/2025 10:59:51 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAPTOP-FIBQ8M85"
+  DTS:CreatorName="LAPTOP-FIBQ8M85\HP PAVILION"
+  DTS:DTSID="{672A7A0B-2616-40F0-9419-A1AEDC508DC7}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="17.0.1008.3"
+  DTS:LocaleID="16394"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{AA7384FC-7439-4435-808F-66DDC9BCA1B0}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-FIBQ8M85.DW]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{7C8503DE-8F28-4533-8A4B-EB9E07AF8970}"
+      DTS:ObjectName="LAPTOP-FIBQ8M85.DW">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=LAPTOP-FIBQ8M85;Initial Catalog=DW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{7C8503DE-8F28-4533-8A4B-EB9E07AF8970}LAPTOP-FIBQ8M85.DW;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Tarea Ejecutar SQL"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{B0581C14-1B7D-4A2C-84FD-EFE1F2D4F691}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tarea Ejecutar SQL"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{7C8503DE-8F28-4533-8A4B-EB9E07AF8970}"
+          SQLTask:SqlStatementSource="-- Configurar idioma para que los nombres salgan en Español&#xA;SET LANGUAGE Spanish;&#xA;&#xA;-- Limpiar la tabla por si acaso (para no duplicar si corres varias veces)&#xA;DELETE FROM DimTiempo;&#xA;&#xA;-- Variables para el rango de fechas (Ajústalo si necesitas más años)&#xA;DECLARE @FechaActual DATE = '2020-01-01';&#xA;DECLARE @FechaFin    DATE = '2030-12-31';&#xA;&#xA;WHILE @FechaActual &lt;= @FechaFin&#xA;BEGIN&#xA;    INSERT INTO DimTiempo (&#xA;        Fecha,&#xA;        Anio,&#xA;        Mes,&#xA;        NombreMes,&#xA;        Trimestre,&#xA;        Semestre,&#xA;        Dia,&#xA;        DiaSemana,&#xA;        NombreDia,&#xA;        EsFinDeSemana&#xA;    )&#xA;    VALUES (&#xA;        @FechaActual,&#xA;        YEAR(@FechaActual),&#xA;        MONTH(@FechaActual),&#xA;        DATENAME(MONTH, @FechaActual),&#xA;        DATEPART(QUARTER, @FechaActual),&#xA;        CASE WHEN MONTH(@FechaActual) &lt;= 6 THEN 1 ELSE 2 END,&#xA;        DAY(@FechaActual),&#xA;        DATEPART(WEEKDAY, @FechaActual),&#xA;        DATENAME(WEEKDAY, @FechaActual),&#xA;        -- Detectar fin de semana (Sábado o Domingo)&#xA;        CASE WHEN DATEPART(WEEKDAY, @FechaActual) IN (1, 7) THEN 1 ELSE 0 END &#xA;        -- OJO: Si tu SQL está configurado diferente y el 1 no es Domingo, esto podría variar, &#xA;        -- pero para el examen suele funcionar estándar.&#xA;    );&#xA;&#xA;    -- Avanzar un día&#xA;    SET @FechaActual = DATEADD(DAY, 1, @FechaActual);&#xA;END" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="169.6,41.6"
+          Id="Package\Tarea Ejecutar SQL"
+          TopLeft="97.1428573496488,87.9411763935044" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

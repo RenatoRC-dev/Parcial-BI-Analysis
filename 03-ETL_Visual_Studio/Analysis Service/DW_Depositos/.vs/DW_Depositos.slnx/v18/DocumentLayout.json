@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\ProyectDSS\\Examen\\DW_Depositos\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{06F655D0-7E49-2FE8-DC72-44ACC7F4C248}|DW_Depositos\\DW_Depositos.dwproj|C:\\ProyectDSS\\Examen\\DW_Depositos\\DW_Depositos\\Cubo_Depositos.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{06F655D0-7E49-2FE8-DC72-44ACC7F4C248}|DW_Depositos\\DW_Depositos.dwproj|solutionrelative:DW_Depositos\\Cubo_Depositos.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Cubo_Depositos.cube [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\ProyectDSS\\Examen\\DW_Depositos\\DW_Depositos\\Cubo_Depositos.cube",
+              "RelativeDocumentMoniker": "DW_Depositos\\Cubo_Depositos.cube",
+              "ToolTip": "C:\\ProyectDSS\\Examen\\DW_Depositos\\DW_Depositos\\Cubo_Depositos.cube [Dise\u00F1o]",
+              "RelativeToolTip": "DW_Depositos\\Cubo_Depositos.cube [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-01T19:03:52.636Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

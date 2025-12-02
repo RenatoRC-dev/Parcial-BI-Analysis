@@ -1,0 +1,51 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\ProyectDSS\\Examen\\DW_Analisis\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7276F890-47BC-89BD-A4E0-A6D637E98F5E}|DW_Analisis\\DW_Analisis.dwproj|C:\\ProyectDSS\\Examen\\DW_Analisis\\DW_Analisis\\DW.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{7276F890-47BC-89BD-A4E0-A6D637E98F5E}|DW_Analisis\\DW_Analisis.dwproj|solutionrelative:DW_Analisis\\DW.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7276F890-47BC-89BD-A4E0-A6D637E98F5E}|DW_Analisis\\DW_Analisis.dwproj|C:\\ProyectDSS\\Examen\\DW_Analisis\\DW_Analisis\\DW.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{7276F890-47BC-89BD-A4E0-A6D637E98F5E}|DW_Analisis\\DW_Analisis.dwproj|solutionrelative:DW_Analisis\\DW.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DW.cube [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\ProyectDSS\\Examen\\DW_Analisis\\DW_Analisis\\DW.cube",
+              "RelativeDocumentMoniker": "DW_Analisis\\DW.cube",
+              "ToolTip": "C:\\ProyectDSS\\Examen\\DW_Analisis\\DW_Analisis\\DW.cube [Dise\u00F1o]",
+              "RelativeToolTip": "DW_Analisis\\DW.cube [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-30T02:40:32.664Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DW.dsv [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\ProyectDSS\\Examen\\DW_Analisis\\DW_Analisis\\DW.dsv",
+              "RelativeDocumentMoniker": "DW_Analisis\\DW.dsv",
+              "ToolTip": "C:\\ProyectDSS\\Examen\\DW_Analisis\\DW_Analisis\\DW.dsv [Dise\u00F1o]",
+              "RelativeToolTip": "DW_Analisis\\DW.dsv [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-28T22:59:03.66Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
